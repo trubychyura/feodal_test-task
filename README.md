@@ -6,3 +6,4 @@
 - to install all dependencies using the command: <br>`npm install`<br>
 - to start project using the command: <br>`npm run start`<br>
 - to open in blowser page on: <br>http://localhost:3000/<br>
+- in order to check task 2 you need to view utils file and browser console where is printed result
