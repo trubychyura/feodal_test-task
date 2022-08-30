@@ -17,3 +17,9 @@ export enum ButtonType {
   default = 'default',
   default2 = 'default2',
 }
+
+export interface Data {
+  start: string;
+  appointments: Array<{ start: string; duration: number }>;
+  end: string;
+}
