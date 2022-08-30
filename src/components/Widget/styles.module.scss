@@ -1,0 +1,50 @@
+/** @format */
+
+.container {
+  margin-top: 50px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  color: #d1d5d7;
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 40px;
+
+  &-user {
+    color: var(--color-text);
+  }
+}
+
+.footer-text {
+  flex: 0 0 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    margin-top: 30px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 20px;
+
+    button {
+      justify-content: center;
+    }
+  }
+
+  .subtitle {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+/** @format */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  width: 150px;
+
+  &-link {
+    display: block;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-basis: 230px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .actions {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .actions {
+    display: none;
+  }
+}

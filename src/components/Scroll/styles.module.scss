@@ -1,0 +1,58 @@
+/** @format */
+
+.content {
+  position: relative;
+  margin-bottom: 35px;
+
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+  }
+
+  &-text {
+    font-size: 10px;
+    height: 250px;
+    padding-right: 5px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) transparent;
+  }
+
+  &-loader {
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+  }
+
+  &-transparency {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
+  }
+
+  p:last-child {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    margin-bottom: 20px;
+  }
+}
